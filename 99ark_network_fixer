@@ -1,0 +1,10 @@
+#!/bin/bash
+
+IF=$1
+STATUS=$2
+
+case "$2" in
+  dhcp4-change|up)
+    /usr/local/bin/ark_network_fixer.sh &> /dev/null
+    ;;
+esac
