@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# This script will be executed *after* all the other init scripts.
+# You can put your own initialization stuff in here if you don't
+# want to do the full Sys V style init stuff.
+
+touch /var/lock/subsys/local
+rm -rf /home/VM\'s/win7-Photoshop/Windows\ 7\ x64.vmdk.lck/
+/usr/bin/vmrun -T ws start "/home/VM's/win7-Photoshop/Windows 7 x64/Windows 7 x64.vmx" nogui
+rm -fr /home/VM\'s/Win12SQL_original/Win12SQL.vmdk.lck/
+/usr/bin/vmrun -T ws start "/home/VM's/Win12SQL/Win12SQL.vmx" nogui
+
