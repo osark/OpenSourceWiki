@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <title>Front-End Wiki: Banner Patterns</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 100%; /* Not actually need for standard block tags */
+    }
+    .viewport {
+      position: relative;
+      padding-bottom: 25%; /* (100% x 1/4) */
+      height: 0; /* Only height is produced from padding */
+    }
+    .banner-img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-size: cover;
+
+      background-image: url("https://www.gnu.org/distros/screenshots/trisquel.png");
+    }
+  </style>
+  <div class="container">
+    <div class="viewport">
+      <div class="banner-img">
+      </div><!-- /.banner-img -->
+    </div><!-- /.viewport -->
+  </div><!-- /.container -->
+  <h1>Banner Patterns</h1>
+  <p>Try zooming in and out, you should always see the same image portion.</p>
+</html>
